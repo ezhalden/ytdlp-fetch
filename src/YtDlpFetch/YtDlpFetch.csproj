@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+
+    <PackageId>YtDlpFetch</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Ezra Halden</Authors>
+    <Description>Find yt-dlp on the machine, or download the right build for this platform and verify its SHA-512 before running it.</Description>
+    <PackageTags>yt-dlp;youtube-dl;download;tools</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/ezhalden/ytdlp-fetch</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
+    <InternalsVisibleTo Include="YtDlpFetch.Tests" />
+  </ItemGroup>
+
+</Project>
